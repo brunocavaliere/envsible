@@ -30,7 +30,9 @@ jobs:
         run: npm run build
 
       - name: Create package
-        run: npm pack --pack-destination release
+        run: |
+          mkdir -p release
+          npm pack --pack-destination release
 
       - name: Create GitHub Release
         env:
