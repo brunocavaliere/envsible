@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root { color-scheme: dark; }
+  html, body, #root { min-height: 100%; overflow: hidden; }
+  body { margin: 0; background: #101114; color: #e7e9ee; font-family: var(--font-sans); }
+}
